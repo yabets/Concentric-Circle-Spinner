@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concentric Circle spinner</title>
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+            body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            }
+
+            .thing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+            border: 10px solid transparent;
+            border-radius: 100%;
+            animation: thing 5s cubic-bezier(0.35, -0.14, 0.79, 1.22) infinite;
+            }
+
+            .red {
+            border-color: #F60000 #F60000 transparent transparent;
+            }
+
+            .orange {
+            border-color: #FF8C00 #FF8C00 transparent transparent;
+            }
+
+
+            .yellow {
+            border-color: #FFEE00 #FFEE00 transparent transparent;
+            }
+
+            .green {
+            border-color: #4DE94C #4DE94C transparent transparent;
+            }
+
+            .blue {
+            border-color: #3783FF #3783FF transparent transparent;
+            }
+
+            .violet {
+            border-color: #4815AA #4815AA transparent transparent;
+            }
+
+            @keyframes thing {
+            100% {
+                transform: rotateZ(1turn);
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="things">
+            <div class="thing red">
+              <div class="thing orange">
+                <div class="thing yellow">
+                  <div class="thing green">
+                    <div class="thing blue">
+                      <div class="thing violet">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+    </body>
+</html>
